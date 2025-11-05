@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - IWB PTY LTD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #7a7474;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #575d61;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #636a70;
+    }
+
+    .drop-off {
+      margin-top: 40px;
+    }
+
+    .drop-off h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .drop-off ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #726f6f;
+      color: #777272;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 10px 0;
+      }
+
+      nav ul li {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">IWB PTY LTD</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="HOME.HTML">Home</a></li>
+        
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="drop-off">
+      <h2>Community Drop-off Points</h2>
+      <ul>
+        <li>Maseru Mall – Electronics Recycling Booth</li>
+        <li>Pioneer High School – E-Waste Collection Bin</li>
+        <li>City Centre – Mobile Drop-off Van (Fridays)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2023 IWB PTY LTD. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - IWB PTY LTD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0078D4, #00B4D8);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .services {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-item {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .service-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .service-item p {
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 10px 0;
+      }
+
+      nav ul li {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">IWB PTY LTD</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="HOME.HTML">Home</a></li>
+        
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Services</h1>
+  </section>
+
+  <section class="services">
+    <div class="service-item">
+      <h3>Electronic Waste Collection</h3>
+      <p>We collect old and unused electronics from homes and businesses.</p>
+    </div>
+    <div class="service-item">
+      <h3>Safe Recycling</h3>
+      <p>We recycle e-waste using environmentally friendly methods.</p>
+    </div>
+    <div class="service-item">
+      <h3>Data Destruction</h3>
+      <p>We ensure secure data removal from devices before disposal.</p>
+    </div>
+    <div class="service-item">
+      <h3>Community Drop-off Points</h3>
+      <p>We provide accessible locations for e-waste drop-off across the region.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2023 IWB PTY LTD. All rights reserved.
+  </footer>
+
+</body>
+</html>
